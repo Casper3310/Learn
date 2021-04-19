@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>laravel</title>
+  </head>
+  <body>
+    <div>
+      <p>Laravel Homestead開發環境設定</p>
+      <a
+        href="https://www.youtube.com/watch?v=n2RAArt1GRI&t=617s&ab_channel=PcwebschoolMediaEs"
+        >參考影片</a
+      >
+      <a href="https://www.youtube.com/watch?v=A3cm6gVOFxk&ab_channel=EricHo"
+        >參考影片</a
+      >
+      <a
+        href="https://www.youtube.com/watch?v=x7pm2lQxAvY&ab_channel=AtifNaseemAtifNaseem"
+        >在Homestead中安裝phpMyadmin</a
+      >
+      <a href="https://laravel.tw/docs/5.3/homestead">安裝中文手冊</a>
+      <p>需安裝</p>
+      <li>
+        <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>
+      </li>
+      <li><a href="https://www.vagrantup.com/downloads">Vagrant</a></li>
+      <li><a href="https://www.phpmyadmin.net/">phpMyadim</a></li>
+      <p>
+        複製完 Homestead 儲存庫，即可在 Homestead 目錄中執行 bash init.sh
+        指令來建立 Homestead.yaml 設定檔。 Homestead.yaml 檔案將會被放置在
+        ~/.homestead 隱藏目錄中：
+      </p>
+      <p>// Mac / Linux... bash init.sh</p>
+      <p>// Windows... init.bat</p>
+      <p>Windows可直接執行init.bat批次檔產生Homestead.yaml設定檔</p>
+      <hr />
+      <p>Homestead.yaml設定檔中</p>
+      <p>
+        folders: <br />本機位置- map: ~/Code <br />對應虛擬機位置to:
+        /home/vagrant/Code
+      </p>
+      <p>
+        sites:<br />
+        本機網址- map: homestead.test <br />對應虛擬機位置to:
+        /home/vagrant/TRTC_Homestead/TRTC/public
+      </p>
+      <hr />
+      <p>
+        在C:\Windows\System32\drivers\etc\hosts檔案中可以設定本機網址與虛擬機對應關西
+      </p>
+      <p>預設虛擬機IP 192.168.10.10 homestead.test加入檔案中</p>
+      <hr />
+
+      <p>vagrant 指令</p>
+      <p>
+        vagrant init初始化<br />vagrant up啟動<br />vagrant halt關閉<br />vagrant
+        status機器開關狀態<br />vagrant ssh用SSH連線虛擬機<br />vagrant
+        destroy刪除虛擬機<br />vagrant destroy --f強制刪除虛擬機<br />vagrant
+        box list現在box清單<br />vagrant provision更新
+      </p>
+      <hr />
+      <p>linux指令</p>
+      <p>pwd顯示目前所在的目錄<br />ls清單</p>
+    </div>
+  </body>
+</html>
